@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="La Tavola Restaurant - modern Italian dining, made memorable.">
+	<title>La Tavola | Modern Italian Dining</title>
+	<link rel="icon" type="image/svg+xml" href="favicon.svg">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="announcement"><span class="announcement-dot"></span> New seasonal menu is now being served <a href="#menu">Explore the menu <span>↗</span></a></div>
+
+	<header class="site-header" id="home">
+		<nav class="nav container" aria-label="Main navigation">
+			<a class="brand" href="#home" aria-label="La Tavola home"><span>LT</span><strong>La Tavola</strong><small>EST. 2014</small></a>
+			<button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span></button><button class="theme-toggle standalone" aria-label="Toggle dark theme">◐</button>
+			<div class="nav-links">
+				<a href="#menu">Menu</a><a href="#story">Our story</a><a href="#gallery">Gallery</a><a href="#reviews">Reviews</a>
+				<a class="nav-reserve" href="#contact">Reserve a table <span>↗</span></a>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<section class="hero">
+			<div class="hero-image"></div>
+			<div class="hero-overlay"></div>
+			<div class="hero-content container">
+				<p class="eyebrow light"><span></span> Modern Italian dining</p>
+				<h1>A table worth<br><em>gathering</em> around.</h1>
+				<p class="hero-copy">Seasonal ingredients, soulful recipes,<br class="desktop-break"> and a little bit of La Tavola magic.</p>
+				<div class="hero-actions"><a class="button button-gold" href="#menu">View our menu <span>↗</span></a><a class="text-link light-link" href="#story">Discover La Tavola <span>↓</span></a></div>
+			</div>
+			<div class="hero-note"><span>SCROLL TO EXPLORE</span><i></i></div>
+			<div class="hero-location"><span>40.7128° N</span><span>74.0060° W</span></div>
+		</section>
+
+		<section class="intro section-pad">
+			<div class="container intro-grid">
+				<div><p class="eyebrow"><span></span> Welcome to La Tavola</p><h2>Good food.<br><em>Good company.</em><br>Good times.</h2></div>
+				<div class="intro-copy"><p>La Tavola means <em>the table</em>. It is where we come together, slow down, and share the moments that matter. Our kitchen brings the warmth of Italy to the heart of the city with a menu that is honest, generous, and always in season.</p><a class="text-link" href="#story">More about our story <span>↗</span></a></div>
+			</div>
+			<div class="container stat-row"><div><strong>10<span>+</span></strong><small>Years of craft</small></div><div><strong>28</strong><small>Seasonal dishes</small></div><div><strong>4.9<span>★</span></strong><small>Guest rating</small></div><div><strong>100<span>%</span></strong><small>Made with love</small></div></div>
+		</section>
+
+		<section class="menu-section section-pad" id="menu">
+			<div class="container section-heading"><div><p class="eyebrow"><span></span> From our kitchen</p><h2>A taste of <em>Italy.</em></h2></div><p>Handmade daily, served<br>with a story.</p></div>
+			<div class="container menu-tabs" role="tablist"><button class="active" data-filter="all">All dishes</button><button data-filter="starters">Starters</button><button data-filter="mains">Mains</button><button data-filter="pasta">Pasta</button><button data-filter="pizza">Pizza</button><button data-filter="desserts">Desserts</button></div>
+			<div class="container dishes-grid">
+				<article class="dish-card" data-category="starters"><div class="dish-image dish-one"><span class="dish-tag">Chef's pick</span></div><div class="dish-meta"><div><h3>Burrata e Pomodori</h3><p>Heirloom tomatoes, basil oil, sourdough</p></div><strong>$16</strong></div><button class="add-to-cart" data-name="Burrata e Pomodori" data-price="16">Add to order +</button></article>
+				<article class="dish-card" data-category="pasta"><div class="dish-image dish-two"><span class="dish-tag">Best seller</span></div><div class="dish-meta"><div><h3>Truffle Tagliolini</h3><p>Black truffle, parmesan, brown butter</p></div><strong>$28</strong></div><button class="add-to-cart" data-name="Truffle Tagliolini" data-price="28">Add to order +</button></article>
+				<article class="dish-card" data-category="mains"><div class="dish-image dish-three"></div><div class="dish-meta"><div><h3>Branzino al Limone</h3><p>Roasted fish, lemon, capers, greens</p></div><strong>$32</strong></div><button class="add-to-cart" data-name="Branzino al Limone" data-price="32">Add to order +</button></article>
+				<article class="dish-card" data-category="pizza"><div class="dish-image dish-four"></div><div class="dish-meta"><div><h3>Pizza Diavola</h3><p>Spicy salami, tomato, fior di latte</p></div><strong>$22</strong></div><button class="add-to-cart" data-name="Pizza Diavola" data-price="22">Add to order +</button></article>
+				<article class="dish-card" data-category="desserts"><div class="dish-image dish-five"></div><div class="dish-meta"><div><h3>Tiramisu Classico</h3><p>Espresso, mascarpone, cocoa</p></div><strong>$12</strong></div><button class="add-to-cart" data-name="Tiramisu Classico" data-price="12">Add to order +</button></article>
+				<article class="dish-card" data-category="starters"><div class="dish-image dish-six"></div><div class="dish-meta"><div><h3>Arancini al Ragu</h3><p>Crispy risotto, beef ragu, pecorino</p></div><strong>$14</strong></div><button class="add-to-cart" data-name="Arancini al Ragu" data-price="14">Add to order +</button></article>
+			</div>
+			<div class="center-link"><a class="button button-outline" href="#contact">View full menu <span>↗</span></a></div>
+		</section>
+
+		<section class="story-section" id="story"><div class="story-photo"></div><div class="story-panel"><p class="eyebrow"><span></span> Our philosophy</p><h2>Simple things,<br><em>beautifully done.</em></h2><p>We believe the best meals are not complicated. They begin with exceptional ingredients, a kitchen that cares, and a table full of people you love.</p><p>From our handmade pasta to our last pour of wine, every detail at La Tavola is an invitation to stay a little longer.</p><a class="text-link" href="#contact">Meet the people behind the table <span>↗</span></a></div></section>
+
+		<section class="gallery-section section-pad" id="gallery"><div class="container section-heading"><div><p class="eyebrow"><span></span> A glimpse inside</p><h2>The La Tavola<br><em>feeling.</em></h2></div><a class="text-link" href="#contact">Follow along @latavolanyc <span>↗</span></a></div><div class="container gallery-grid"><div class="gallery-item gallery-one"></div><div class="gallery-item gallery-two"></div><div class="gallery-item gallery-three"></div><div class="gallery-item gallery-four"></div><div class="gallery-item gallery-five"></div></div></section>
+
+		<section class="review-section" id="reviews"><div class="container review-inner"><div class="quote-mark">“</div><p class="eyebrow light"><span></span> The word on the street</p><blockquote>“The kind of place<br>you keep coming<br><em>back to.</em>”</blockquote><div class="reviewer"><strong>— Olivia M.</strong><span>Regular guest, since 2018</span></div><div class="review-arrows"><button aria-label="Previous review">←</button><span>01 <i></i> 03</span><button aria-label="Next review">→</button></div></div></section>
+
+		<section class="contact-section section-pad" id="contact"><div class="container contact-grid"><div><p class="eyebrow"><span></span> Come find us</p><h2>Your table<br>is <em>waiting.</em></h2><p class="contact-copy">Whether it is a long lunch, a late-night glass of wine, or a celebration to remember, we would love to have you.</p><a class="button button-dark" href="tel:+12125550148">Reserve a table <span>↗</span></a><div class="open-status"><span></span><strong>Open now</strong> · Closes at 11pm</div></div><div class="contact-details"><div><small>LOCATION</small><p>18 Mercer Street<br>New York, NY 10013</p><a class="text-link" href="https://maps.google.com/?q=18+Mercer+Street+New+York" target="_blank" rel="noreferrer">Get directions <span>↗</span></a></div><div><small>HOURS</small><p>Tue — Thu &nbsp; 5–10pm<br>Fri — Sun &nbsp; 11am–11pm</p></div><div><small>CONTACT</small><p><a href="tel:+12125550148">+1 212 555 0148</a><br><a href="mailto:hello@latavola.com">hello@latavola.com</a></p></div><div class="map-wrap"><iframe title="La Tavola location map" src="https://www.google.com/maps?q=18%20Mercer%20Street%20New%20York&output=embed" loading="lazy"></iframe></div></div></div></section>
+		<section class="faq-section section-pad" id="faq"><div class="container section-heading"><div><p class="eyebrow"><span></span> Before you visit</p><h2>Frequently<br><em>asked.</em></h2></div><p>Everything you need<br>to know.</p></div><div class="container faq-list"><details><summary>Do you take reservations? <span>+</span></summary><p>Yes. Reserve online through our form, or call us at +1 212 555 0148. Walk-ins are welcome when space allows.</p></details><details><summary>Do you offer vegetarian options? <span>+</span></summary><p>Absolutely. Our seasonal menu always includes thoughtful vegetarian dishes. Please mention dietary needs when booking.</p></details><details><summary>Can I host a private event? <span>+</span></summary><p>Our dining room is available for intimate celebrations and private dinners. Email hello@latavola.com to enquire.</p></details></div></section>
+	</main>
+
+	<footer class="footer"><div class="container newsletter"><div><p class="eyebrow"><span></span> Stay in the know</p><h2>Good things,<br><em>occasionally.</em></h2></div><form><input type="email" required placeholder="Your email address" aria-label="Email address"><button class="button button-dark" type="submit">Subscribe <span>↗</span></button></form><p class="newsletter-success">You are on the list. See you at the table.</p></div><div class="container footer-top"><a class="brand" href="#home"><span>LT</span><strong>La Tavola</strong><small>EST. 2014</small></a><div class="footer-links"><a href="#menu">Menu</a><a href="#story">Our story</a><a href="#gallery">Gallery</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></div><div class="socials"><a href="#gallery">IG</a><a href="#contact">FB</a><a href="https://wa.me/923291504030" target="_blank" rel="noreferrer">WA</a></div></div><div class="container footer-bottom"><span>© 2024 La Tavola Restaurant</span><span>Made for lingering.</span><a href="#home">Back to top ↑</a></div></footer>
+	<a class="floating-contact whatsapp" href="https://wa.me/923291504030?text=Hello%20La%20Tavola%2C%20I%27d%20like%20to%20make%20a%20reservation." target="_blank" rel="noreferrer" aria-label="Chat on WhatsApp">◔</a><a class="floating-contact call" href="tel:+12125550148" aria-label="Call La Tavola">⌕</a>
+	<button class="cart-fab" aria-label="Open order cart">🛒<b>0</b></button><aside class="cart-drawer" aria-hidden="true"><div class="cart-head"><h2>Your order</h2><button class="cart-close" aria-label="Close cart">×</button></div><div class="cart-items"><p class="empty-cart">Your order is waiting to be filled.</p></div><div class="cart-total"><span>Total</span><strong>$<b>0</b></strong></div><button class="button button-dark checkout-button">Continue to checkout <span>↗</span></button></aside><div class="cart-backdrop"></div>
+	<div class="order-modal" aria-hidden="true"><div class="modal-backdrop"></div><div class="modal-card"><button class="modal-close" aria-label="Close">×</button><p class="eyebrow"><span></span> La Tavola</p><h2>Reserve your <em>table.</em></h2><p>Leave us a few details and we will get back to you shortly.</p><form><label>Name<input required type="text" placeholder="Your name"></label><label>Guests<select><option>2 guests</option><option>3 guests</option><option>4 guests</option><option>5+ guests</option></select></label><label>Date<input required type="date"></label><button class="button button-dark" type="submit">Request reservation <span>↗</span></button></form><p class="form-success">Thank you. We will be in touch shortly.</p></div></div>
+	<script src="script.js"></script>
+</body>
+</html>
